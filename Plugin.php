@@ -68,7 +68,7 @@ class WTS_Plugin implements Typecho_Plugin_Interface
      */
     public static function render(){}
     public static function header(){
-        echo '<link rel="stylesheet" type="text/css" href= "usr/plugins/WTS/notify2.css" />';
+        echo '<link rel="stylesheet" type="text/css" href= "'.Helper::options()->pluginUrl.'/WTS/notify2.css" />';
     }
 
 
@@ -81,7 +81,7 @@ class WTS_Plugin implements Typecho_Plugin_Interface
         
     
         
-        echo '<script src='.'"usr/plugins/WTS'.'/'."zi_message2.js" .'" type="text/javascript" charset="utf-8"></script>';
+        echo '<script src="'.Helper::options()->pluginUrl .'/WTS/zi_message2.js" type="text/javascript" charset="utf-8"></script>';
         echo <<<EOF
 
 <script>
